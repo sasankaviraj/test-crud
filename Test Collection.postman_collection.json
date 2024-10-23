@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "629d0665-536e-4dc1-8500-0e4782b7e63e",
+		"name": "Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6923031"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Anusha kalhara/Pictures/download1.jpg"
+						},
+						{
+							"key": "empNo",
+							"value": "EMP0004",
+							"type": "text"
+						},
+						{
+							"key": "empName",
+							"value": "Sherlock Holmes",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine1",
+							"value": "125 Main St",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine2",
+							"value": "Suite 5C",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine3",
+							"value": "New York, NY 10003",
+							"type": "text"
+						},
+						{
+							"key": "empDateOfJoin",
+							"value": "2024-10-23T09:00:00",
+							"type": "text"
+						},
+						{
+							"key": "empStatus",
+							"value": "dsf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Anusha kalhara/Pictures/download1.jpg"
+						},
+						{
+							"key": "empNo",
+							"value": "EMP0004",
+							"type": "text"
+						},
+						{
+							"key": "empName",
+							"value": "Sherlock Holmes",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine1",
+							"value": "125 Main St",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine2",
+							"value": "Suite 5C",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine3",
+							"value": "New York, NY 10003",
+							"type": "text"
+						},
+						{
+							"key": "empDateOfJoin",
+							"value": "2024-10-23T09:00:00",
+							"type": "text"
+						},
+						{
+							"key": "empStatus",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/update/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Anusha kalhara/Pictures/download1.jpg"
+						},
+						{
+							"key": "empNo",
+							"value": "EMP0004",
+							"type": "text"
+						},
+						{
+							"key": "empName",
+							"value": "Sherlock Holmes",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine1",
+							"value": "125 Main St",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine2",
+							"value": "Suite 5C",
+							"type": "text"
+						},
+						{
+							"key": "empAddressLine3",
+							"value": "New York, NY 10003",
+							"type": "text"
+						},
+						{
+							"key": "empDateOfJoin",
+							"value": "2024-10-23T09:00:00",
+							"type": "text"
+						},
+						{
+							"key": "empStatus",
+							"value": "dsf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
